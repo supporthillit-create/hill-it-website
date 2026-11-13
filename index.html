@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b3b">
+<meta name="description" content="Hill IT — Digital solutions for brands that want to grow. Social media, branding, web design and digital security.">
+<title>Hill IT — Build. Protect. Grow.</title>
+<style>
+:root{--navy:#071b3b;--blue:#1677e8;--cyan:#55d6e8;--ink:#10213d;--muted:#61718b;--pale:#f3f8ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid #e8eef7}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:25px;letter-spacing:-1px;color:var(--navy)}
+.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,#1688f8,#0754b7);display:grid;place-items:center;color:white;font-size:25px;font-weight:900;box-shadow:0 8px 22px #1677e83d}
+.links{display:flex;gap:30px;align-items:center;color:#52627b;font-size:14px;font-weight:650}.links a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:999px;background:var(--blue);color:white;font-weight:750;box-shadow:0 10px 25px #1677e833;transition:.2s}.btn:hover{transform:translateY(-2px);background:#0864ce}.btn.outline{background:white;color:var(--navy);border:1px solid #d9e5f4;box-shadow:none}
+.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{position:relative;overflow:hidden;padding:100px 0 90px;background:radial-gradient(ellipse at 82% 35%,#d8eeff 0,transparent 35%),linear-gradient(135deg,#f7fbff,#edf5ff 58%,#fff)}
+.hero:before{content:"";position:absolute;width:440px;height:440px;border:1px solid #c7def7;border-radius:50%;right:-110px;top:15px;box-shadow:0 0 0 45px #dcecff55,0 0 0 90px #dcecff33}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:50px;position:relative}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid #d8e7fa;border-radius:99px;background:#ffffffb8;color:#1766bd;font-size:12px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+h1{font-size:clamp(48px,6.4vw,78px);line-height:.99;letter-spacing:-4px;color:var(--navy);margin:24px 0 20px}h1 span{color:var(--blue)}
+.lead{font-size:18px;line-height:1.75;color:var(--muted);max-width:570px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.hero-art{min-height:390px;border-radius:34px;background:linear-gradient(145deg,#0b2b58,#0a67c9 70%,#55d6e8);padding:30px;position:relative;box-shadow:0 30px 70px #0b4b9433;overflow:hidden}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff30;border-radius:50%;width:330px;height:330px;right:-80px;top:-90px}.hero-art:after{width:230px;height:230px;right:15px;top:70px}
+.art-card{position:absolute;z-index:2;background:#ffffffed;border:1px solid #ffffffa8;border-radius:19px;padding:18px 20px;box-shadow:0 16px 35px #001b3c33}
+.art-card strong{display:block;color:var(--navy);font-size:15px}.art-card small{color:#667994}.art-card.one{top:48px;left:28px}.art-card.two{right:24px;top:165px}.art-card.three{left:48px;bottom:35px}
+.big-mark{position:absolute;z-index:1;inset:0;display:grid;place-items:center;color:#ffffff1e;font-size:220px;font-weight:900}
+section{padding:86px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 42px}.kicker{color:var(--blue);font-size:12px;letter-spacing:1.6px;font-weight:850;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,46px);letter-spacing:-1.8px;color:var(--navy);margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.services{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:27px;border:1px solid #e5edf7;border-radius:22px;background:white;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 20px 45px #0c376c12;border-color:#c9def7}
+.ico{width:49px;height:49px;border-radius:15px;background:#eaf4ff;color:var(--blue);display:grid;place-items:center;font-size:23px;margin-bottom:20px}.card h3{margin:0 0 10px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}
+.about{background:var(--pale)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-panel{padding:35px;border-radius:28px;background:linear-gradient(145deg,#08234b,#0c65bd);color:white;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}.about-panel .quote{font-size:32px;line-height:1.2;font-weight:800;letter-spacing:-1px}.about-panel small{color:#c7e3ff}.about-copy h2{font-size:42px;letter-spacing:-1.8px;color:var(--navy);margin:10px 0 17px}.about-copy p{color:var(--muted);line-height:1.8}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.step{padding:22px;border-radius:18px;background:white;border:1px solid #e2ebf6}.step b{color:var(--blue);font-size:13px}.step h3{margin:8px 0;color:var(--navy);font-size:16px}.step p{font-size:13px;margin:0}
+.cta{padding:70px 0;background:linear-gradient(110deg,#071b3b,#0b5cb0);color:white;text-align:center}.cta h2{font-size:clamp(32px,4vw,46px);letter-spacing:-1.5px;margin:0 0 13px}.cta p{color:#d2e5fb;margin:0 0 27px}.cta .btn{background:white;color:#0758ad;box-shadow:none}
+footer{background:#06152e;color:#d9e8fa;padding:38px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot .brand{color:white}.foot p{color:#9fb4d0;font-size:13px;margin:8px 0 0}.footlinks{display:flex;gap:20px;font-size:13px;color:#c3d4e9}
+.float{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:#20bd65;color:white;display:grid;place-items:center;font-size:25px;box-shadow:0 10px 28px #087b3c55}
+@media(max-width:800px){.links{display:none}.menu{display:block}.hero{padding:65px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:330px}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.about-grid{gap:28px}section{padding:65px 0}}
+@media(max-width:520px){h1{letter-spacing:-2.8px}.cards{grid-template-columns:1fr}.hero-art{min-height:300px;padding:18px}.art-card{padding:14px}.art-card.two{right:12px}.art-card.three{left:20px}.foot{align-items:flex-start;flex-direction:column}.about-copy h2{font-size:34px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="mark">H</span>HILL IT</a>
+<nav class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#process">How We Work</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="https://wa.me/8801897928454" target="_blank" rel="noopener">Talk to us ↗</a>
+<button class="menu" aria-label="Menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">✦ Digital solutions & technology</span>
+<h1>Build. <span>Protect.</span><br>Grow.</h1>
+<p class="lead">We help brands build a stronger digital presence through creative strategy, smart technology and reliable digital solutions.</p>
+<div class="actions"><a class="btn" href="#services">Explore services →</a><a class="btn outline" href="https://wa.me/8801897928454" target="_blank" rel="noopener">Let's talk</a></div></div>
+<div class="hero-art"><div class="big-mark">H</div>
+<div class="art-card one"><strong>✦ Creative Branding</strong><small>Make your brand memorable</small></div>
+<div class="art-card two"><strong>◈ Digital Security</strong><small>Protect your online presence</small></div>
+<div class="art-card three"><strong>↗ Digital Growth</strong><small>Turn ideas into progress</small></div>
+</div></div></section>
+<section class="services" id="services"><div class="wrap">
+<div class="section-head"><span class="kicker">What we do</span><h2>Solutions that move you forward.</h2><p>From building your identity to growing your online reach, Hill IT brings essential digital services together.</p></div>
+<div class="cards">
+<article class="card"><div class="ico">✧</div><h3>Social Media Management</h3><p>Strategic page management, content planning and audience engagement to strengthen your online presence.</p></article>
+<article class="card"><div class="ico">◈</div><h3>Cyber Security Support</h3><p>Practical guidance to improve account safety, protect digital assets and respond to common security concerns.</p></article>
+<article class="card"><div class="ico">✎</div><h3>Branding & Graphic Design</h3><p>Distinctive visual identities, logos and creative designs that help your brand stand out.</p></article>
+<article class="card"><div class="ico">⌘</div><h3>Website Design</h3><p>Modern, responsive websites designed to present your brand clearly across devices.</p></article>
+<article class="card"><div class="ico">↗</div><h3>Digital Marketing</h3><p>Thoughtful campaign planning and digital promotion to help you reach the right audience.</p></article>
+<article class="card"><div class="ico">▣</div><h3>Content & Creative Solutions</h3><p>Creative content support for businesses, creators and growing digital communities.</p></article>
+</div></div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+<div class="about-panel"><span class="kicker" style="color:#8bd9ff">The Hill IT approach</span><div class="quote">Smart ideas.<br>Meaningful impact.<br>Digital confidence.</div><small>HILL IT · DIGITAL SOLUTIONS</small></div>
+<div class="about-copy"><span class="kicker">About Hill IT</span><h2>Your digital journey, made stronger.</h2><p>Hill IT is a digital services brand focused on helping people, creators and businesses navigate the online world with confidence. We bring creativity, technology and a people-first approach to every project.</p><a class="btn" href="https://wa.me/8801897928454" target="_blank" rel="noopener">Connect with us ↗</a></div>
+</div></section>
+<section id="process"><div class="wrap"><div class="section-head"><span class="kicker">Simple process</span><h2>From idea to impact.</h2><p>A clear, collaborative process keeps every project moving in the right direction.</p></div>
+<div class="steps"><div class="step"><b>01 / DISCOVER</b><h3>Tell us your goal</h3><p>Share your idea, challenge or business needs with our team.</p></div><div class="step"><b>02 / PLAN</b><h3>Build the right approach</h3><p>We discuss a suitable solution and a clear project direction.</p></div><div class="step"><b>03 / GROW</b><h3>Make it happen</h3><p>We work with you to bring the plan to life and move forward.</p></div></div></div></section>
+<section class="cta" id="contact"><div class="wrap"><h2>Ready to grow your digital presence?</h2><p>Let's discuss what Hill IT can help you build.</p><a class="btn" href="https://wa.me/8801897928454" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div></section>
+</main>
+<footer><div class="wrap foot"><div><a class="brand" href="#"><span class="mark">H</span>HILL IT</a><p>Build. Protect. Grow.</p></div><div class="footlinks"><a href="#services">Services</a><a href="#about">About</a><a href="https://wa.me/8801897928454">WhatsApp</a></div><p>© 2026 Hill IT. All rights reserved.</p></div></footer>
+<a class="float" href="https://wa.me/8801897928454" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+</body></html>
